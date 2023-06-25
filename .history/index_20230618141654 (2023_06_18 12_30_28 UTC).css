@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-down {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Navigation */
+nav.nav {
+  z-index: 7;
+  top: 10px;
+  position: fixed;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Ajout de la propriété pour empêcher le retour à la ligne */
+  background-color: #313131;
+  opacity: 0.75;
+  padding: 15px;
+  left: 150px;
+  right: 15px;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+nav.nav li a {
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  margin: 0; /* Supprimer les marges horizontales des liens */
+}
+
+nav.nav li a:hover {
+  color: black; /* Changement de couleur au survol */
+  background-color: white; /* Changement de couleur d'arrière-plan au survol */
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Accueil */
+header img {
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.top-page {
+  background: url('images/galoubet1.jpg');
+  background-size: cover;
+  height: 80vh;
+  padding: 25px;
+  z-index: -2;
+}
+
+#background-video {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  background-size: cover;
+  height: 80vh;
+  z-index: -2;
+  position: relative;
+}
+
+.big-title {
+    color: #f1f1f1;
+    font-size: 140px;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    transform: translate(50%, 50%);
+  }
+  
+/* Nos chevaux */
+.entraineur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  
+  .entraineur div {
+    text-align: center;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: 80%;
+  }
+  
+  .entraineur img {
+    border-radius: 50px;
+    max-width: 95%;
+    height: auto;
+    width: 85%;
+    padding-bottom: 25px;
+  }
+  
+  .entraineur h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }

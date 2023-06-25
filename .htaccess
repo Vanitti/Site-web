@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Gérer les erreurs 404 des répertoires
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ 404-directory.html [L]
+
+# Gérer les erreurs 404 des pages
+ErrorDocument 404 404.html

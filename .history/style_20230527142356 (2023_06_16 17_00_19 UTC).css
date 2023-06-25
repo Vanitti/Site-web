@@ -1,0 +1,295 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+    font-family: 'Montserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+/* tete de page */
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img {
+    width: 150px;
+}
+
+section.top-page {
+    background: url('../images/galoubet1.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+
+
+  #background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #313131;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+/* Accueil */
+
+.landing-page {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size:  120px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    width: 60%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+}
+
+/* menu de navigation */
+
+nav.nav {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+nav.nav li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+}
+
+nav.nav li a:hover{
+    position: relative;
+    color: #313131;
+    background-color: #f1f1f1 ;
+    padding: 7.5px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+/* services */
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/* type de texte */
+
+.section-title {
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: 'Abril FatFace', cursive;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+    margin-left:5px;
+    content: "";
+    position: absolute;
+    background-color: #6D071A;
+    width: 290px;
+    height: 7px;
+    bottom: 0;
+}
+
+.section-sous {
+    margin-left: 25px;
+    font-size: 35px;
+    font-weight: 75px;
+    position: relative;
+    padding-top: 25px;
+}
+
+.section-sous::before {
+    margin-left: 25px;
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 7px;
+    bottom: 0;
+}
+
+.texte {
+    margin-left: 25px;
+    position: relative;
+}
+
+.texte::before {
+    margin-left: 25px;
+    content: "";
+    position: absolute;
+    width: 290px;
+    height: 7px;
+    bottom: 0;
+}
+
+.texta {
+    margin-left: 25px;
+    color: black;
+    font-style: normal;
+    text-decoration:none;
+    font-weight: 700;
+    width: 290px;
+    height: 40px;
+    display: flex;
+}
+
+.texta::before {
+    margin-left: 25px;
+    content: "";
+    position: absolute;
+    width: 290px;
+    height: 7px;
+    bottom: 0;
+}
+
+.texts {
+    margin-left: 25px;
+    color: #f1f1f1;
+    font-style: normal;
+    text-decoration:none;
+    font-weight: 700;
+    width: 290px;
+    height: 40px;
+    display: flex;
+    background-color: #313131;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    
+}
+
+.texts:hover {
+    margin-left: 25px;
+    color: #313131;
+    font-style: normal;
+    text-decoration:none;
+    font-weight: 700;
+    width: 290px;
+    height: 40px;
+    display: flex;
+    background-color: #f1f1f1;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texts::before {
+    margin-left: 25px;
+    content: "";
+    position: absolute;
+    width: 290px;
+    height: 7px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* pied de page */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: black;
+}
+
+footer.v {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer.v a.cgv {
+    text-decoration: none;
+    color: white;
+}
+
+.endr {
+    align-items: center;
+}
+
+.endrv {
+    align-items: center;
+    color: white;
+}
+.arr {
+padding: 50px;
+}
+
+.copyright {
+    color: white;
+}
